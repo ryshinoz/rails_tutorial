@@ -66,7 +66,7 @@ Rails.application.configure do
   config.action_mailer.delivery_method = :smtp
   host = 'hidden-fjord-11810.herokuapp.com'
   config.action_mailer.default_url_options = { host: host }
-  ActionMailder::Base.smtp_settings = {
+  ActionMailer::Base.smtp_settings = {
       :address => 'smtp.sendgrid.net',
       :port    => '587',
       :authentication => :plain,
